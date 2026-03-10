@@ -17,5 +17,7 @@ public class Main {
         IO.print("Insira um valor em quilometros: ");
         double km = sc.nextDouble();
         IO.println(String.format("%.2f", km) + "km = " + String.format("%.2f", Conversor.kmParaMilhas(km)) + " milhas");
+
+        sc.close();
     }
 }

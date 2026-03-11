@@ -67,5 +67,7 @@ public class Main {
                 .map(Funcionario::calcularSalario)
                 .reduce(0.0, (acumulador, salario) -> acumulador + salario);
         IO.println("\nFolha de pagamento = R$ " + String.format("%.2f", total));
+
+        sc.close();
     }
 }

@@ -74,5 +74,7 @@ public class Main {
                 .map(Forma::area)
                 .reduce(0.0, (acumulador, area) -> acumulador + area);
         IO.println("\nÁrea total: " + String.format("%.2f", areaTotal));
+
+        sc.close();
     }
 }
